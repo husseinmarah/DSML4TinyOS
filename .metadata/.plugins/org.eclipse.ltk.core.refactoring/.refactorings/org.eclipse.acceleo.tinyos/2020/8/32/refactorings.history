@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 2 elements from project &apos;org.eclipse.acceleo.tinyos&apos;&#x0D;&#x0A;- Original project: &apos;org.eclipse.acceleo.tinyos&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     MyProgramAppC.nc&#x0D;&#x0A;     MyProgramC.nc" description="Delete elements" element1="generated_code/MyProgramAppC.nc" element2="generated_code/MyProgramC.nc" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="2" stamp="1596484888051" subPackages="false" version="1.0"/>
+</session>

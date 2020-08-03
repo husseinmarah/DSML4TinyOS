@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tinyos_metamodel="http://emf.tinyos_metamodel" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_WMR0ANWTEeqFqIFFvFTfvA" selectedViews="_1kUN4NWTEeqFqIFFvFTfvA" version="14.1.0.201810161215">
+    <semanticResources>modelTest1.tinyos_metamodel</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_1kUN4NWTEeqFqIFFvFTfvA">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_fqZCUNWVEeqFqIFFvFTfvA" name="new Application diagram" repPath="#_fo9e8NWVEeqFqIFFvFTfvA">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']"/>
+        <target xmi:type="tinyos_metamodel:Application" href="modelTest1.tinyos_metamodel#//@hasApplication"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_fo9e8NWVEeqFqIFFvFTfvA" name="new Application diagram">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_fpzMcNWVEeqFqIFFvFTfvA" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_fpzMcdWVEeqFqIFFvFTfvA"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_fqcssNWVEeqFqIFFvFTfvA" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_fqcssdWVEeqFqIFFvFTfvA" type="Sirius" element="_fo9e8NWVEeqFqIFFvFTfvA" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_fqdTwdWVEeqFqIFFvFTfvA" type="2001" element="_fpS2INWVEeqFqIFFvFTfvA">
+          <children xmi:type="notation:Node" xmi:id="_fqeh4NWVEeqFqIFFvFTfvA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_fqeh4dWVEeqFqIFFvFTfvA" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fqqvINWVEeqFqIFFvFTfvA" type="3005" element="_fpTdMNWVEeqFqIFFvFTfvA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_fqqvIdWVEeqFqIFFvFTfvA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqqvItWVEeqFqIFFvFTfvA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_fqdTwtWVEeqFqIFFvFTfvA" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqdTw9WVEeqFqIFFvFTfvA" x="156" y="-34" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_fqfI8NWVEeqFqIFFvFTfvA" type="2001" element="_fpUrUNWVEeqFqIFFvFTfvA">
+          <children xmi:type="notation:Node" xmi:id="_fqfwANWVEeqFqIFFvFTfvA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_fqfwAdWVEeqFqIFFvFTfvA" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fqrWMNWVEeqFqIFFvFTfvA" type="3005" element="_fpUrUdWVEeqFqIFFvFTfvA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_fqrWMdWVEeqFqIFFvFTfvA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqrWMtWVEeqFqIFFvFTfvA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_fqfI8dWVEeqFqIFFvFTfvA" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqfI8tWVEeqFqIFFvFTfvA" x="81" y="62" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_fqfwAtWVEeqFqIFFvFTfvA" type="2001" element="_fpVSYNWVEeqFqIFFvFTfvA">
+          <children xmi:type="notation:Node" xmi:id="_fqgXENWVEeqFqIFFvFTfvA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_fqgXEdWVEeqFqIFFvFTfvA" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fqr9QNWVEeqFqIFFvFTfvA" type="3005" element="_fpVSYdWVEeqFqIFFvFTfvA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_fqr9QdWVEeqFqIFFvFTfvA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqr9QtWVEeqFqIFFvFTfvA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_fqfwA9WVEeqFqIFFvFTfvA" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqfwBNWVEeqFqIFFvFTfvA" x="252" y="62" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_fqhlMNWVEeqFqIFFvFTfvA" type="2001" element="_fpV5cNWVEeqFqIFFvFTfvA">
+          <children xmi:type="notation:Node" xmi:id="_fqizUNWVEeqFqIFFvFTfvA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_fqizUdWVEeqFqIFFvFTfvA" y="-14"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fqr9Q9WVEeqFqIFFvFTfvA" type="3005" element="_fpV5cdWVEeqFqIFFvFTfvA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_fqr9RNWVEeqFqIFFvFTfvA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqr9RdWVEeqFqIFFvFTfvA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_fqhlMdWVEeqFqIFFvFTfvA" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqhlMtWVEeqFqIFFvFTfvA" x="60" y="146" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_fqjaYNWVEeqFqIFFvFTfvA" type="2001" element="_fpWggNWVEeqFqIFFvFTfvA">
+          <children xmi:type="notation:Node" xmi:id="_fqkBcNWVEeqFqIFFvFTfvA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_fqkBcdWVEeqFqIFFvFTfvA" x="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fqskUNWVEeqFqIFFvFTfvA" type="3005" element="_fpWggdWVEeqFqIFFvFTfvA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_fqskUdWVEeqFqIFFvFTfvA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqskUtWVEeqFqIFFvFTfvA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_fqjaYdWVEeqFqIFFvFTfvA" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqjaYtWVEeqFqIFFvFTfvA" x="12" y="288" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_fqkogNWVEeqFqIFFvFTfvA" type="2001" element="_fpXHkNWVEeqFqIFFvFTfvA">
+          <children xmi:type="notation:Node" xmi:id="_fqlPkNWVEeqFqIFFvFTfvA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_fqlPkdWVEeqFqIFFvFTfvA" x="12" y="51"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fqtLYNWVEeqFqIFFvFTfvA" type="3005" element="_fpXHkdWVEeqFqIFFvFTfvA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_fqtLYdWVEeqFqIFFvFTfvA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqtLYtWVEeqFqIFFvFTfvA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_fqkogdWVEeqFqIFFvFTfvA" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqkogtWVEeqFqIFFvFTfvA" x="12" y="426" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_fql2oNWVEeqFqIFFvFTfvA" type="2001" element="_fpXHk9WVEeqFqIFFvFTfvA">
+          <children xmi:type="notation:Node" xmi:id="_fql2o9WVEeqFqIFFvFTfvA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_fql2pNWVEeqFqIFFvFTfvA" x="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fqtycNWVEeqFqIFFvFTfvA" type="3005" element="_fpXHlNWVEeqFqIFFvFTfvA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_fqtycdWVEeqFqIFFvFTfvA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqtyctWVEeqFqIFFvFTfvA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_fql2odWVEeqFqIFFvFTfvA" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fql2otWVEeqFqIFFvFTfvA" x="96" y="288" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_fqmdsNWVEeqFqIFFvFTfvA" type="2001" element="_fpYVsNWVEeqFqIFFvFTfvA">
+          <children xmi:type="notation:Node" xmi:id="_fqnEwNWVEeqFqIFFvFTfvA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_fqnEwdWVEeqFqIFFvFTfvA" x="36" y="-14"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fqtyc9WVEeqFqIFFvFTfvA" type="3005" element="_fpYVsdWVEeqFqIFFvFTfvA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_fqtydNWVEeqFqIFFvFTfvA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqtyddWVEeqFqIFFvFTfvA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_fqmdsdWVEeqFqIFFvFTfvA" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqmdstWVEeqFqIFFvFTfvA" x="252" y="146" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_fqnr0NWVEeqFqIFFvFTfvA" type="2001" element="_fpY8wdWVEeqFqIFFvFTfvA">
+          <children xmi:type="notation:Node" xmi:id="_fqnr09WVEeqFqIFFvFTfvA" visible="false" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_fqnr1NWVEeqFqIFFvFTfvA" x="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fquZgNWVEeqFqIFFvFTfvA" type="3005" element="_fpY8wtWVEeqFqIFFvFTfvA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_fquZgdWVEeqFqIFFvFTfvA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fquZgtWVEeqFqIFFvFTfvA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_fqnr0dWVEeqFqIFFvFTfvA" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqnr0tWVEeqFqIFFvFTfvA" x="204" y="288" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_fqoS4NWVEeqFqIFFvFTfvA" type="2001" element="_fpZj0dWVEeqFqIFFvFTfvA">
+          <children xmi:type="notation:Node" xmi:id="_fqo58NWVEeqFqIFFvFTfvA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_fqo58dWVEeqFqIFFvFTfvA" x="11" y="51"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fqvAkNWVEeqFqIFFvFTfvA" type="3005" element="_fpZj0tWVEeqFqIFFvFTfvA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_fqvAkdWVEeqFqIFFvFTfvA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqvAktWVEeqFqIFFvFTfvA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_fqoS4dWVEeqFqIFFvFTfvA" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqoS4tWVEeqFqIFFvFTfvA" x="312" y="432" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_fqo58tWVEeqFqIFFvFTfvA" type="2001" element="_fpax8NWVEeqFqIFFvFTfvA">
+          <children xmi:type="notation:Node" xmi:id="_fqphANWVEeqFqIFFvFTfvA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_fqphAdWVEeqFqIFFvFTfvA" x="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fqvAk9WVEeqFqIFFvFTfvA" type="3005" element="_fpax8dWVEeqFqIFFvFTfvA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_fqvAlNWVEeqFqIFFvFTfvA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqvAldWVEeqFqIFFvFTfvA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_fqo589WVEeqFqIFFvFTfvA" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqo59NWVEeqFqIFFvFTfvA" x="156" y="444" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_fqqIENWVEeqFqIFFvFTfvA" type="2001" element="_fpbZANWVEeqFqIFFvFTfvA">
+          <children xmi:type="notation:Node" xmi:id="_fqqIE9WVEeqFqIFFvFTfvA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_fqqIFNWVEeqFqIFFvFTfvA" x="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fqvnoNWVEeqFqIFFvFTfvA" type="3005" element="_fpbZAdWVEeqFqIFFvFTfvA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_fqvnodWVEeqFqIFFvFTfvA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqvnotWVEeqFqIFFvFTfvA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_fqqIEdWVEeqFqIFFvFTfvA" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqqIEtWVEeqFqIFFvFTfvA" x="324" y="288" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_X6T7wNWWEeqFqIFFvFTfvA" type="2001" element="_X5y-YNWWEeqFqIFFvFTfvA">
+          <children xmi:type="notation:Node" xmi:id="_X6VJ4NWWEeqFqIFFvFTfvA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_X6VJ4dWWEeqFqIFFvFTfvA" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_X7BGYNWWEeqFqIFFvFTfvA" type="3005" element="_X5zlcNWWEeqFqIFFvFTfvA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_X7BGYdWWEeqFqIFFvFTfvA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_X7BGYtWWEeqFqIFFvFTfvA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_X6T7wdWWEeqFqIFFvFTfvA" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_X6T7wtWWEeqFqIFFvFTfvA" x="108" y="384" width="50" height="50"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_fqdTwNWVEeqFqIFFvFTfvA"/>
+        <edges xmi:type="notation:Edge" xmi:id="_fqwOsNWVEeqFqIFFvFTfvA" type="4001" element="_fpki8NWVEeqFqIFFvFTfvA" source="_fqdTwdWVEeqFqIFFvFTfvA" target="_fqfI8NWVEeqFqIFFvFTfvA">
+          <children xmi:type="notation:Node" xmi:id="_fqw1wNWVEeqFqIFFvFTfvA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqw1wdWVEeqFqIFFvFTfvA" x="-21" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fqxc0NWVEeqFqIFFvFTfvA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqxc0dWVEeqFqIFFvFTfvA" x="24" y="-16"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fqxc0tWVEeqFqIFFvFTfvA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqxc09WVEeqFqIFFvFTfvA" x="-7" y="-24"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_fqwOsdWVEeqFqIFFvFTfvA" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_fqwOstWVEeqFqIFFvFTfvA" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fqwOs9WVEeqFqIFFvFTfvA" points="[0, 25, 75, -71]$[0, 48, 75, -48]$[-75, 48, 0, -48]$[-75, 71, 0, -25]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fqyD4NWVEeqFqIFFvFTfvA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fqyD4dWVEeqFqIFFvFTfvA" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_fqyD4tWVEeqFqIFFvFTfvA" type="4001" element="_fplKAtWVEeqFqIFFvFTfvA" source="_fqdTwdWVEeqFqIFFvFTfvA" target="_fqfwAtWVEeqFqIFFvFTfvA">
+          <children xmi:type="notation:Node" xmi:id="_fqyD5tWVEeqFqIFFvFTfvA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqyD59WVEeqFqIFFvFTfvA" x="6" y="26"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fqyq8NWVEeqFqIFFvFTfvA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqyq8dWVEeqFqIFFvFTfvA" x="-2" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fqyq8tWVEeqFqIFFvFTfvA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqyq89WVEeqFqIFFvFTfvA" x="-4" y="-10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_fqyD49WVEeqFqIFFvFTfvA" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_fqyD5NWVEeqFqIFFvFTfvA" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fqyD5dWVEeqFqIFFvFTfvA" points="[0, 25, -96, -71]$[0, 48, -96, -48]$[96, 48, 0, -48]$[96, 71, 0, -25]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fqyq9NWVEeqFqIFFvFTfvA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fqzSANWVEeqFqIFFvFTfvA" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_fqzSAdWVEeqFqIFFvFTfvA" type="4001" element="_fpmYINWVEeqFqIFFvFTfvA" source="_fqhlMNWVEeqFqIFFvFTfvA" target="_fqjaYNWVEeqFqIFFvFTfvA">
+          <children xmi:type="notation:Node" xmi:id="_fqzSBdWVEeqFqIFFvFTfvA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqzSBtWVEeqFqIFFvFTfvA" x="-41" y="4"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fqzSB9WVEeqFqIFFvFTfvA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqz5ENWVEeqFqIFFvFTfvA" x="-11" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fqz5EdWVEeqFqIFFvFTfvA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fqz5EtWVEeqFqIFFvFTfvA" x="-18" y="-11"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_fqzSAtWVEeqFqIFFvFTfvA" routing="Tree"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_fqzSA9WVEeqFqIFFvFTfvA" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fqzSBNWVEeqFqIFFvFTfvA" points="[0, -25, 110, 85]$[-110, -85, 0, 25]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fq0gINWVEeqFqIFFvFTfvA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fq0gIdWVEeqFqIFFvFTfvA" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_fq0gItWVEeqFqIFFvFTfvA" type="4001" element="_fpm_MNWVEeqFqIFFvFTfvA" source="_fqhlMNWVEeqFqIFFvFTfvA" target="_fql2oNWVEeqFqIFFvFTfvA">
+          <children xmi:type="notation:Node" xmi:id="_fq1HMNWVEeqFqIFFvFTfvA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fq1HMdWVEeqFqIFFvFTfvA" x="-9" y="-7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fq1HMtWVEeqFqIFFvFTfvA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fq1HM9WVEeqFqIFFvFTfvA" x="-7" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fq1uQNWVEeqFqIFFvFTfvA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fq1uQdWVEeqFqIFFvFTfvA" x="-2" y="8"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_fq0gI9WVEeqFqIFFvFTfvA" routing="Tree"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_fq0gJNWVEeqFqIFFvFTfvA" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fq0gJdWVEeqFqIFFvFTfvA" points="[0, -25, 0, 85]$[0, -85, 0, 25]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fq1uQtWVEeqFqIFFvFTfvA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fq1uQ9WVEeqFqIFFvFTfvA" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_fq28YNWVEeqFqIFFvFTfvA" type="4001" element="_fpnmQNWVEeqFqIFFvFTfvA" source="_fqfwAtWVEeqFqIFFvFTfvA" target="_fqmdsNWVEeqFqIFFvFTfvA">
+          <children xmi:type="notation:Node" xmi:id="_fq4KgNWVEeqFqIFFvFTfvA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fq4KgdWVEeqFqIFFvFTfvA" x="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fq5YoNWVEeqFqIFFvFTfvA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fq5YodWVEeqFqIFFvFTfvA" x="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fq6mwNWVEeqFqIFFvFTfvA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fq6mwdWVEeqFqIFFvFTfvA" x="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_fq28YdWVEeqFqIFFvFTfvA" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_fq28YtWVEeqFqIFFvFTfvA" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fq28Y9WVEeqFqIFFvFTfvA" points="[0, 25, 0, -59]$[0, 59, 0, -25]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fq7N0NWVEeqFqIFFvFTfvA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fq7N0dWVEeqFqIFFvFTfvA" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_fq7N0tWVEeqFqIFFvFTfvA" type="4001" element="_fpoNUNWVEeqFqIFFvFTfvA" source="_fqjaYNWVEeqFqIFFvFTfvA" target="_fqkogNWVEeqFqIFFvFTfvA">
+          <children xmi:type="notation:Node" xmi:id="_fq704NWVEeqFqIFFvFTfvA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fq704dWVEeqFqIFFvFTfvA" x="14" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fq8b8NWVEeqFqIFFvFTfvA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fq8b8dWVEeqFqIFFvFTfvA" x="6" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fq8b8tWVEeqFqIFFvFTfvA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fq8b89WVEeqFqIFFvFTfvA" x="-27" y="9"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_fq7N09WVEeqFqIFFvFTfvA" routing="Tree"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_fq7N1NWVEeqFqIFFvFTfvA" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fq7N1dWVEeqFqIFFvFTfvA" points="[0, -25, 0, 85]$[0, -85, 0, 25]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fq9DANWVEeqFqIFFvFTfvA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fq9DAdWVEeqFqIFFvFTfvA" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_fq9DAtWVEeqFqIFFvFTfvA" type="4001" element="_fppbcNWVEeqFqIFFvFTfvA" source="_fqmdsNWVEeqFqIFFvFTfvA" target="_fqqIENWVEeqFqIFFvFTfvA">
+          <children xmi:type="notation:Node" xmi:id="_fq9qENWVEeqFqIFFvFTfvA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fq9qEdWVEeqFqIFFvFTfvA" x="-27" y="-3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fq9qEtWVEeqFqIFFvFTfvA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fq9qE9WVEeqFqIFFvFTfvA" x="-12" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fq9qFNWVEeqFqIFFvFTfvA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fq9qFdWVEeqFqIFFvFTfvA" x="4" y="13"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_fq9DA9WVEeqFqIFFvFTfvA" routing="Tree"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_fq9DBNWVEeqFqIFFvFTfvA" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fq9DBdWVEeqFqIFFvFTfvA" points="[0, -25, -110, 85]$[110, -85, 0, 25]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fq-RINWVEeqFqIFFvFTfvA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fq-RIdWVEeqFqIFFvFTfvA" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_fq-RItWVEeqFqIFFvFTfvA" type="4001" element="_fpqCgNWVEeqFqIFFvFTfvA" source="_fqmdsNWVEeqFqIFFvFTfvA" target="_fqnr0NWVEeqFqIFFvFTfvA">
+          <children xmi:type="notation:Node" xmi:id="_fq-4MNWVEeqFqIFFvFTfvA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fq-4MdWVEeqFqIFFvFTfvA" x="-35" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fq-4MtWVEeqFqIFFvFTfvA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fq-4M9WVEeqFqIFFvFTfvA" x="-9" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fq-4NNWVEeqFqIFFvFTfvA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fq-4NdWVEeqFqIFFvFTfvA" x="-20" y="-10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_fq-RI9WVEeqFqIFFvFTfvA" routing="Tree"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_fq-RJNWVEeqFqIFFvFTfvA" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fq-RJdWVEeqFqIFFvFTfvA" points="[0, -25, 0, 85]$[0, -85, 0, 25]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fq_fQNWVEeqFqIFFvFTfvA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fq_fQdWVEeqFqIFFvFTfvA" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_fq_fQtWVEeqFqIFFvFTfvA" type="4001" element="_fpqpkNWVEeqFqIFFvFTfvA" source="_fqnr0NWVEeqFqIFFvFTfvA" target="_fqo58tWVEeqFqIFFvFTfvA">
+          <children xmi:type="notation:Node" xmi:id="_fq_fRtWVEeqFqIFFvFTfvA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fq_fR9WVEeqFqIFFvFTfvA" x="-20" y="24"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_frAGUNWVEeqFqIFFvFTfvA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_frAGUdWVEeqFqIFFvFTfvA" x="25" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_frAGUtWVEeqFqIFFvFTfvA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_frAGU9WVEeqFqIFFvFTfvA" x="23" y="-13"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_fq_fQ9WVEeqFqIFFvFTfvA" routing="Tree"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_fq_fRNWVEeqFqIFFvFTfvA" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fq_fRdWVEeqFqIFFvFTfvA" points="[0, 24, 48, -132]$[0, 107, 48, -49]$[-48, 107, 0, -49]$[-48, 137, 0, -19]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_frAGVNWVEeqFqIFFvFTfvA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_frAGVdWVEeqFqIFFvFTfvA" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_frAtYNWVEeqFqIFFvFTfvA" type="4001" element="_fpr3sNWVEeqFqIFFvFTfvA" source="_fqnr0NWVEeqFqIFFvFTfvA" target="_fqoS4NWVEeqFqIFFvFTfvA">
+          <children xmi:type="notation:Node" xmi:id="_frAtZNWVEeqFqIFFvFTfvA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_frAtZdWVEeqFqIFFvFTfvA" x="-36" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_frAtZtWVEeqFqIFFvFTfvA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_frAtZ9WVEeqFqIFFvFTfvA" x="-19" y="-8"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_frBUcNWVEeqFqIFFvFTfvA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_frBUcdWVEeqFqIFFvFTfvA" x="5" y="2"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_frAtYdWVEeqFqIFFvFTfvA" routing="Tree"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_frAtYtWVEeqFqIFFvFTfvA" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_frAtY9WVEeqFqIFFvFTfvA" points="[0, 24, -144, -120]$[0, 107, -144, -37]$[144, 107, 0, -37]$[144, 132, 0, -12]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_frBUctWVEeqFqIFFvFTfvA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_frBUc9WVEeqFqIFFvFTfvA" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_frBUdNWVEeqFqIFFvFTfvA" type="4001" element="_fpwJINWVEeqFqIFFvFTfvA" source="_fqfI8NWVEeqFqIFFvFTfvA" target="_fqhlMNWVEeqFqIFFvFTfvA">
+          <children xmi:type="notation:Node" xmi:id="_frB7gNWVEeqFqIFFvFTfvA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_frB7gdWVEeqFqIFFvFTfvA" x="-9" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_frB7gtWVEeqFqIFFvFTfvA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_frB7g9WVEeqFqIFFvFTfvA" x="12" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_frCikNWVEeqFqIFFvFTfvA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_frCikdWVEeqFqIFFvFTfvA" x="3" y="-3"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_frBUddWVEeqFqIFFvFTfvA" routing="Tree"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_frBUdtWVEeqFqIFFvFTfvA" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_frBUd9WVEeqFqIFFvFTfvA" points="[0, -25, 0, 85]$[0, -85, 0, 25]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_frCiktWVEeqFqIFFvFTfvA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_frCik9WVEeqFqIFFvFTfvA" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_X7C7kNWWEeqFqIFFvFTfvA" type="4001" element="_X566MNWWEeqFqIFFvFTfvA" source="_fql2oNWVEeqFqIFFvFTfvA" target="_X6T7wNWWEeqFqIFFvFTfvA">
+          <children xmi:type="notation:Node" xmi:id="_X7DioNWWEeqFqIFFvFTfvA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_X7DiodWWEeqFqIFFvFTfvA" x="-17" y="13"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_X7EJsNWWEeqFqIFFvFTfvA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_X7EJsdWWEeqFqIFFvFTfvA" x="-6" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_X7EJstWWEeqFqIFFvFTfvA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_X7EJs9WWEeqFqIFFvFTfvA" x="-30" y="9"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_X7C7kdWWEeqFqIFFvFTfvA" routing="Tree"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_X7C7ktWWEeqFqIFFvFTfvA" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_X7C7k9WWEeqFqIFFvFTfvA" points="[0, -25, 0, 85]$[0, -85, 0, 25]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_X7EwwNWWEeqFqIFFvFTfvA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_X7EwwdWWEeqFqIFFvFTfvA" id="(0.5,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_fpS2INWVEeqFqIFFvFTfvA" name="test1" outgoingEdges="_fpki8NWVEeqFqIFFvFTfvA _fplKAtWVEeqFqIFFvFTfvA" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="tinyos_metamodel:Application" href="modelTest1.tinyos_metamodel#//@hasApplication"/>
+      <semanticElements xmi:type="tinyos_metamodel:Application" href="modelTest1.tinyos_metamodel#//@hasApplication"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_fpTdMNWVEeqFqIFFvFTfvA" showIcon="false" iconPath="/tinyos.design/icons/Application.png" workspacePath="/tinyos.design/icons/Application.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ApplicationNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ApplicationNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_fpUrUNWVEeqFqIFFvFTfvA" name="ModuleComponent" outgoingEdges="_fpwJINWVEeqFqIFFvFTfvA" incomingEdges="_fpki8NWVEeqFqIFFvFTfvA" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="tinyos_metamodel:Component" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.0"/>
+      <semanticElements xmi:type="tinyos_metamodel:Component" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_fpUrUdWVEeqFqIFFvFTfvA" showIcon="false" workspacePath="/tinyos.design/icons/Component.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ComponentNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ComponentNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_fpVSYNWVEeqFqIFFvFTfvA" name="ConfigurationComponent" outgoingEdges="_fpnmQNWVEeqFqIFFvFTfvA" incomingEdges="_fplKAtWVEeqFqIFFvFTfvA" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="tinyos_metamodel:Component" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.1"/>
+      <semanticElements xmi:type="tinyos_metamodel:Component" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_fpVSYdWVEeqFqIFFvFTfvA" showIcon="false" workspacePath="/tinyos.design/icons/Component.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ComponentNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ComponentNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_fpV5cNWVEeqFqIFFvFTfvA" name="M" outgoingEdges="_fpmYINWVEeqFqIFFvFTfvA _fpm_MNWVEeqFqIFFvFTfvA" incomingEdges="_fpwJINWVEeqFqIFFvFTfvA" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="tinyos_metamodel:Module" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.0/@containsModule"/>
+      <semanticElements xmi:type="tinyos_metamodel:Module" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.0/@containsModule"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_fpV5cdWVEeqFqIFFvFTfvA" showIcon="false" workspacePath="/tinyos.design/icons/Module.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ModuleNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ModuleNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_fpWggNWVEeqFqIFFvFTfvA" outgoingEdges="_fpoNUNWVEeqFqIFFvFTfvA" incomingEdges="_fpmYINWVEeqFqIFFvFTfvA" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="tinyos_metamodel:Module_Signature" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.0/@containsModule/@has_module_signature"/>
+      <semanticElements xmi:type="tinyos_metamodel:Module_Signature" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.0/@containsModule/@has_module_signature"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_fpWggdWVEeqFqIFFvFTfvA" showIcon="false" workspacePath="/tinyos.design/icons/Module_Signature.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ModuleSignatureNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ModuleSignatureNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_fpXHkNWVEeqFqIFFvFTfvA" name="timer" incomingEdges="_fpoNUNWVEeqFqIFFvFTfvA" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="tinyos_metamodel:Interface" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.0/@containsModule/@has_module_signature/@usesInterface.0"/>
+      <semanticElements xmi:type="tinyos_metamodel:Interface" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.0/@containsModule/@has_module_signature/@usesInterface.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_fpXHkdWVEeqFqIFFvFTfvA" showIcon="false" workspacePath="/tinyos.design/icons/Interface.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='InterfaceNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='InterfaceNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_fpXHk9WVEeqFqIFFvFTfvA" outgoingEdges="_X566MNWWEeqFqIFFvFTfvA" incomingEdges="_fpm_MNWVEeqFqIFFvFTfvA" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="tinyos_metamodel:Module_Implementation" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.0/@containsModule/@has_module_implementation"/>
+      <semanticElements xmi:type="tinyos_metamodel:Module_Implementation" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.0/@containsModule/@has_module_implementation"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_fpXHlNWVEeqFqIFFvFTfvA" showIcon="false" workspacePath="/tinyos.design/icons/Module_Implementation.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ModuleImplementationNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ModuleImplementationNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_fpYVsNWVEeqFqIFFvFTfvA" name="C" outgoingEdges="_fppbcNWVEeqFqIFFvFTfvA _fpqCgNWVEeqFqIFFvFTfvA" incomingEdges="_fpnmQNWVEeqFqIFFvFTfvA" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="tinyos_metamodel:Configuration" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.1/@containsConfiguration"/>
+      <semanticElements xmi:type="tinyos_metamodel:Configuration" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.1/@containsConfiguration"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_fpYVsdWVEeqFqIFFvFTfvA" showIcon="false" workspacePath="/tinyos.design/icons/Configuration.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ConfigurationNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ConfigurationNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_fpY8wdWVEeqFqIFFvFTfvA" outgoingEdges="_fpqpkNWVEeqFqIFFvFTfvA _fpr3sNWVEeqFqIFFvFTfvA" incomingEdges="_fpqCgNWVEeqFqIFFvFTfvA" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="tinyos_metamodel:Configuration_Implementation" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.1/@containsConfiguration/@has_configuration_implementation"/>
+      <semanticElements xmi:type="tinyos_metamodel:Configuration_Implementation" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.1/@containsConfiguration/@has_configuration_implementation"/>
+      <graphicalFilters xmi:type="diagram:HideLabelFilter" uid="_fpZj0NWVEeqFqIFFvFTfvA"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_fpY8wtWVEeqFqIFFvFTfvA" showIcon="false" hideLabelByDefault="true" workspacePath="/tinyos.design/icons/Configuration_Implementation.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ConfigurationImplementationNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ConfigurationImplementationNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_fpZj0dWVEeqFqIFFvFTfvA" name="timer1" incomingEdges="_fpr3sNWVEeqFqIFFvFTfvA" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="tinyos_metamodel:Components" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.1/@containsConfiguration/@has_configuration_implementation/@definesComponents.0"/>
+      <semanticElements xmi:type="tinyos_metamodel:Components" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.1/@containsConfiguration/@has_configuration_implementation/@definesComponents.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_fpZj0tWVEeqFqIFFvFTfvA" showIcon="false" workspacePath="/tinyos.design/icons/Components.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ComponentsNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ComponentsNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_fpax8NWVEeqFqIFFvFTfvA" incomingEdges="_fpqpkNWVEeqFqIFFvFTfvA" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="tinyos_metamodel:Wiring" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.1/@containsConfiguration/@has_configuration_implementation/@hasWiring.0"/>
+      <semanticElements xmi:type="tinyos_metamodel:Wiring" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.1/@containsConfiguration/@has_configuration_implementation/@hasWiring.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_fpax8dWVEeqFqIFFvFTfvA" showIcon="false" workspacePath="/tinyos.design/icons/Wiring.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='WiringNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='WiringNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_fpbZANWVEeqFqIFFvFTfvA" incomingEdges="_fppbcNWVEeqFqIFFvFTfvA" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="tinyos_metamodel:Configuration_Signature" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.1/@containsConfiguration/@has_configuration_signature"/>
+      <semanticElements xmi:type="tinyos_metamodel:Configuration_Signature" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.1/@containsConfiguration/@has_configuration_signature"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_fpbZAdWVEeqFqIFFvFTfvA" showIcon="false" workspacePath="/tinyos.design/icons/Configuration_Signature.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ConfigurationSignatureNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ConfigurationSignatureNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_fpki8NWVEeqFqIFFvFTfvA" sourceNode="_fpS2INWVEeqFqIFFvFTfvA" targetNode="_fpUrUNWVEeqFqIFFvFTfvA">
+      <target xmi:type="tinyos_metamodel:Application" href="modelTest1.tinyos_metamodel#//@hasApplication"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_fpki8dWVEeqFqIFFvFTfvA" size="2" routingStyle="manhattan" centered="Both" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@edgeMappings[name='ApplicationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_fpki8tWVEeqFqIFFvFTfvA"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@edgeMappings[name='ApplicationEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_fplKAtWVEeqFqIFFvFTfvA" sourceNode="_fpS2INWVEeqFqIFFvFTfvA" targetNode="_fpVSYNWVEeqFqIFFvFTfvA">
+      <target xmi:type="tinyos_metamodel:Application" href="modelTest1.tinyos_metamodel#//@hasApplication"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_fplxENWVEeqFqIFFvFTfvA" size="2" routingStyle="manhattan" centered="Both" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@edgeMappings[name='ApplicationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_fplxEdWVEeqFqIFFvFTfvA"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@edgeMappings[name='ApplicationEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_fpmYINWVEeqFqIFFvFTfvA" sourceNode="_fpV5cNWVEeqFqIFFvFTfvA" targetNode="_fpWggNWVEeqFqIFFvFTfvA">
+      <target xmi:type="tinyos_metamodel:Module" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.0/@containsModule"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_fpmYIdWVEeqFqIFFvFTfvA" size="2" routingStyle="tree" centered="Both" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@edgeMappings[name='ModuleSignatureEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_fpmYItWVEeqFqIFFvFTfvA"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@edgeMappings[name='ModuleSignatureEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_fpm_MNWVEeqFqIFFvFTfvA" sourceNode="_fpV5cNWVEeqFqIFFvFTfvA" targetNode="_fpXHk9WVEeqFqIFFvFTfvA">
+      <target xmi:type="tinyos_metamodel:Module" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.0/@containsModule"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_fpm_MdWVEeqFqIFFvFTfvA" size="2" routingStyle="tree" centered="Both" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@edgeMappings[name='ModuleImplementationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_fpm_MtWVEeqFqIFFvFTfvA"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@edgeMappings[name='ModuleImplementationEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_fpnmQNWVEeqFqIFFvFTfvA" sourceNode="_fpVSYNWVEeqFqIFFvFTfvA" targetNode="_fpYVsNWVEeqFqIFFvFTfvA">
+      <target xmi:type="tinyos_metamodel:Component" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_fpnmQdWVEeqFqIFFvFTfvA" size="2" routingStyle="manhattan" centered="Both" strokeColor="252,233,79">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@edgeMappings[name='ConfigurationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_fpnmQtWVEeqFqIFFvFTfvA"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@edgeMappings[name='ConfigurationEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_fpoNUNWVEeqFqIFFvFTfvA" sourceNode="_fpWggNWVEeqFqIFFvFTfvA" targetNode="_fpXHkNWVEeqFqIFFvFTfvA">
+      <target xmi:type="tinyos_metamodel:Module_Signature" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.0/@containsModule/@has_module_signature"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_fpoNUdWVEeqFqIFFvFTfvA" size="2" routingStyle="tree" centered="Both" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@edgeMappings[name='ModuleSignatureInterfaceEdge%20(uses)']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_fpoNUtWVEeqFqIFFvFTfvA"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@edgeMappings[name='ModuleSignatureInterfaceEdge%20(uses)']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_fppbcNWVEeqFqIFFvFTfvA" sourceNode="_fpYVsNWVEeqFqIFFvFTfvA" targetNode="_fpbZANWVEeqFqIFFvFTfvA">
+      <target xmi:type="tinyos_metamodel:Configuration" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.1/@containsConfiguration"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_fppbcdWVEeqFqIFFvFTfvA" size="2" routingStyle="tree" centered="Both" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@edgeMappings[name='ConfigurationSignatureEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_fppbctWVEeqFqIFFvFTfvA"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@edgeMappings[name='ConfigurationSignatureEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_fpqCgNWVEeqFqIFFvFTfvA" sourceNode="_fpYVsNWVEeqFqIFFvFTfvA" targetNode="_fpY8wdWVEeqFqIFFvFTfvA">
+      <target xmi:type="tinyos_metamodel:Configuration" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.1/@containsConfiguration"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_fpqCgdWVEeqFqIFFvFTfvA" size="2" routingStyle="tree" centered="Both" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@edgeMappings[name='ConfigurationImplementationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_fpqCgtWVEeqFqIFFvFTfvA"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@edgeMappings[name='ConfigurationImplementationEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_fpqpkNWVEeqFqIFFvFTfvA" sourceNode="_fpY8wdWVEeqFqIFFvFTfvA" targetNode="_fpax8NWVEeqFqIFFvFTfvA">
+      <target xmi:type="tinyos_metamodel:Configuration_Implementation" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.1/@containsConfiguration/@has_configuration_implementation"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_fpqpkdWVEeqFqIFFvFTfvA" size="2" routingStyle="tree" centered="Both" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@edgeMappings[name='ConfigurationImplementationWiringEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_fpqpktWVEeqFqIFFvFTfvA"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@edgeMappings[name='ConfigurationImplementationWiringEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_fpr3sNWVEeqFqIFFvFTfvA" sourceNode="_fpY8wdWVEeqFqIFFvFTfvA" targetNode="_fpZj0dWVEeqFqIFFvFTfvA">
+      <target xmi:type="tinyos_metamodel:Configuration_Implementation" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.1/@containsConfiguration/@has_configuration_implementation"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_fpr3sdWVEeqFqIFFvFTfvA" size="2" routingStyle="tree" centered="Both" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@edgeMappings[name='ConfigurationImplementationComponentsEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_fpr3stWVEeqFqIFFvFTfvA"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@edgeMappings[name='ConfigurationImplementationComponentsEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_fpwJINWVEeqFqIFFvFTfvA" sourceNode="_fpUrUNWVEeqFqIFFvFTfvA" targetNode="_fpV5cNWVEeqFqIFFvFTfvA">
+      <target xmi:type="tinyos_metamodel:Component" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_fpwJIdWVEeqFqIFFvFTfvA" size="2" routingStyle="tree" centered="Both" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@edgeMappings[name='ModuleEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_fpwJItWVEeqFqIFFvFTfvA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@edgeMappings[name='ModuleEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_X5y-YNWWEeqFqIFFvFTfvA" name="eventTest.run()" incomingEdges="_X566MNWWEeqFqIFFvFTfvA" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="tinyos_metamodel:Event" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.0/@containsModule/@has_module_implementation/@implementsEvent.0"/>
+      <semanticElements xmi:type="tinyos_metamodel:Event" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.0/@containsModule/@has_module_implementation/@implementsEvent.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_X5zlcNWWEeqFqIFFvFTfvA" showIcon="false" workspacePath="/tinyos.design/icons/Event.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='EventNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='EventNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_X566MNWWEeqFqIFFvFTfvA" sourceNode="_fpXHk9WVEeqFqIFFvFTfvA" targetNode="_X5y-YNWWEeqFqIFFvFTfvA">
+      <target xmi:type="tinyos_metamodel:Module_Implementation" href="modelTest1.tinyos_metamodel#//@hasApplication/@hasComponent.0/@containsModule/@has_module_implementation"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_X57hQNWWEeqFqIFFvFTfvA" size="2" routingStyle="tree" centered="Both" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@edgeMappings[name='ModuleImplementationEventEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_X57hQdWWEeqFqIFFvFTfvA"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@edgeMappings[name='ModuleImplementationEventEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_fo-GANWVEeqFqIFFvFTfvA"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/tinyos.design/description/tinyos.odesign#//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer"/>
+    <target xmi:type="tinyos_metamodel:Application" href="modelTest1.tinyos_metamodel#//@hasApplication"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

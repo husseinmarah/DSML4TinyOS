@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tinyos_metamodel:Mote xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:tinyos_metamodel="http://emf.tinyos_metamodel">
+  <hasApplication Name="test1" Information="this application for test">
+    <hasComponent Name="ModuleComponent">
+      <containsModule Name="M">
+        <has_module_signature>
+          <usesInterface Name="timer"/>
+        </has_module_signature>
+        <has_module_implementation>
+          <implementsEvent Name="eventTest.run()" Contents="ggg"/>
+        </has_module_implementation>
+      </containsModule>
+    </hasComponent>
+    <hasComponent Name="ConfigurationComponent">
+      <containsConfiguration Name="C">
+        <has_configuration_signature/>
+        <has_configuration_implementation>
+          <hasWiring/>
+          <definesComponents Name="timer1"/>
+        </has_configuration_implementation>
+      </containsConfiguration>
+    </hasComponent>
+  </hasApplication>
+</tinyos_metamodel:Mote>

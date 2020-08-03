@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" name="tinyos_metamodel" version="12.0.0.2017041100">
+  <ownedViewpoints name="Mote" modelFileExtension="tinyos_metamodel">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Application diagram" domainClass="tinyos_metamodel::Application">
+      <metamodel href="http://emf.tinyos_metamodel#/"/>
+      <defaultLayer name="TinyOS_Concrete_Syntaxt" icon="/tinyos.design/icons/Application.gif">
+        <nodeMappings name="ApplicationNode" preconditionExpression="aql:if self.hasComponent.containsModule->size()>1 then self.hasComponent.containsModule->size()= 1 else self.hasComponent.containsConfiguration->size()=1 endif" domainClass="tinyos_metamodel::Application">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="feature:Name" iconPath="/tinyos.design/icons/Application.png" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/tinyos.design/icons/Application.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="ComponentNode" preconditionExpression="aql:if (self.containsModule->size()=1) then (self.containsConfiguration->size()=0) else (self.containsConfiguration->size()=1) endif" domainClass="tinyos_metamodel::Component">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="feature:Name" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/tinyos.design/icons/Component.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="ModuleNode" preconditionExpression="aql:self.oclAsType(tinyos_metamodel::Module).Name->size()>0" domainClass="tinyos_metamodel::Module">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="feature:Name" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/tinyos.design/icons/Module.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="ModuleSignatureNode" domainClass="tinyos_metamodel::Module_Signature">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="feature:Name" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/tinyos.design/icons/Module_Signature.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="InterfaceNode" preconditionExpression="aql:self.oclAsType(tinyos_metamodel::Interface).Name->size()>0" domainClass="tinyos_metamodel::Interface">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="feature:Name" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/tinyos.design/icons/Interface.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="ModuleImplementationNode" domainClass="tinyos_metamodel::Module_Implementation">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/tinyos.design/icons/Module_Implementation.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="FunctionNode" domainClass="tinyos_metamodel::Function">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/tinyos.design/icons/Function.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="EventNode" preconditionExpression="aql:self.Name->size()>0" domainClass="tinyos_metamodel::Event">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="feature:Name" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/tinyos.design/icons/Event.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="CommandNode" preconditionExpression="aql:self.Name->size()>0" domainClass="tinyos_metamodel::Command">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="feature:Name" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/tinyos.design/icons/Command.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="ConfigurationNode" preconditionExpression="aql:self.oclAsType(tinyos_metamodel::Configuration).Name->size()>0" domainClass="tinyos_metamodel::Configuration">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="feature:Name" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/tinyos.design/icons/Configuration.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="ConfigurationImplementationNode" domainClass="tinyos_metamodel::Configuration_Implementation">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" hideLabelByDefault="true" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/tinyos.design/icons/Configuration_Implementation.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="ComponentsNode" preconditionExpression="aql:self.Name->size()>0" domainClass="tinyos_metamodel::Components">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="feature:Name" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/tinyos.design/icons/Components.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="nesCNode" preconditionExpression="aql:self.Content.size()>0" domainClass="tinyos_metamodel::nesC">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="feature:Content" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/tinyos.design/icons/nesC.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="TaskNode" preconditionExpression="aql:self.Name->size()>0" domainClass="tinyos_metamodel::Task">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="feature:Name" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/tinyos.design/icons/Task.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="WiringNode" domainClass="tinyos_metamodel::Wiring">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="feature:Description" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/tinyos.design/icons/Wiring.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="ConfigurationSignatureNode" domainClass="tinyos_metamodel::Configuration_Signature">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="feature:Name" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/tinyos.design/icons/Configuration_Signature.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="IncludeDeclerationNode" domainClass="tinyos_metamodel::IncludeDecleration">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="feature:Name" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/tinyos.design/icons/IncludeDeclaration.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Helper_Function" preconditionExpression="aql:self.oclAsType(tinyos_metamodel::Helper_Function).Name->size()>0" domainClass="tinyos_metamodel::Helper_Function">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="feature:Name" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/tinyos.design/icons/Helper_Function.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="ApplicationEdge" preconditionExpression="aql:if (self.hasComponent->size()>2) then (self.hasComponent->size()=2)  else 'It Has More Than Two Compoenents' endif" sourceMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ApplicationNode']" targetMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ComponentNode']" targetFinderExpression="feature:hasComponent">
+          <style sizeComputationExpression="2" routingStyle="manhattan" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="ModuleSignatureEdge" sourceMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ModuleNode']" targetMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ModuleSignatureNode']" targetFinderExpression="feature:has_module_signature">
+          <style sizeComputationExpression="2" routingStyle="tree" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="ModuleImplementationEdge" sourceMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ModuleNode']" targetMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ModuleImplementationNode']" targetFinderExpression="feature:has_module_implementation">
+          <style sizeComputationExpression="2" routingStyle="tree" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="ConfigurationEdge" sourceMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ComponentNode']" targetMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ConfigurationNode']" targetFinderExpression="feature:containsConfiguration">
+          <style sizeComputationExpression="2" routingStyle="manhattan" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="ModuleSignatureInterfaceEdge (uses)" sourceMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ModuleSignatureNode']" targetMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='InterfaceNode']" targetFinderExpression="feature:usesInterface">
+          <style sizeComputationExpression="2" routingStyle="tree" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="ModuleSignatureInterfaceEdge (provides)" sourceMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ModuleSignatureNode']" targetMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='InterfaceNode']" targetFinderExpression="feature:providesInterface">
+          <style sizeComputationExpression="2" routingStyle="tree" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="ModuleImplementationEventEdge" sourceMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ModuleImplementationNode']" targetMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='EventNode']" targetFinderExpression="feature:implementsEvent">
+          <style sizeComputationExpression="2" routingStyle="tree" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="ConfigurationSignatureEdge" sourceMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ConfigurationNode']" targetMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ConfigurationSignatureNode']" targetFinderExpression="feature:has_configuration_signature">
+          <style sizeComputationExpression="2" routingStyle="tree" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="ConfigurationImplementationEdge" sourceMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ConfigurationNode']" targetMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ConfigurationImplementationNode']" targetFinderExpression="feature:has_configuration_implementation">
+          <style sizeComputationExpression="2" routingStyle="tree" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="ConfigurationImplementationWiringEdge" sourceMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ConfigurationImplementationNode']" targetMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='WiringNode']" targetFinderExpression="feature:hasWiring">
+          <style sizeComputationExpression="2" routingStyle="tree" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Module_Implementation_nesCEdge" sourceMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ModuleImplementationNode']" targetMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='nesCNode']" targetFinderExpression="feature:has_nesC_code">
+          <style sizeComputationExpression="2" routingStyle="tree" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="ConfigurationSignatureInterfaceEdge (provides)" sourceMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ConfigurationSignatureNode']" targetMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='InterfaceNode']" targetFinderExpression="feature:providesInterface">
+          <style sizeComputationExpression="2" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="ConfigurationSignatureInterfaceEdge (uses)" sourceMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ConfigurationSignatureNode']" targetMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='InterfaceNode']" targetFinderExpression="feature:usesInterface">
+          <style sizeComputationExpression="2" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="ModuleImplementationCommandEdge" sourceMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ModuleImplementationNode']" targetMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='CommandNode']" targetFinderExpression="feature:implementsCommand">
+          <style sizeComputationExpression="2" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="EventTaskEdge" preconditionExpression="aql:self.Name.size()>0" sourceMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='EventNode']" targetMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='TaskNode']" targetFinderExpression="feature:hasTask">
+          <style sizeComputationExpression="2" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="ConfigurationImplementationComponentsEdge" sourceMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ConfigurationImplementationNode']" targetMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ComponentsNode']" targetFinderExpression="feature:definesComponents">
+          <style sizeComputationExpression="2" routingStyle="tree" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="CommandTaskEdge" sourceMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='CommandNode']" targetMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='TaskNode']" targetFinderExpression="feature:hasTask">
+          <style sizeComputationExpression="2" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="ModuleImplementationTaskEdge" preconditionExpression="aql:self.Name.size()->0" sourceMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ModuleImplementationNode']" targetMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='TaskNode']" targetFinderExpression="feature:implementsTask">
+          <style sizeComputationExpression="2" routingStyle="tree" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Wiring_nesCEdge" sourceMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='WiringNode']" targetMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='nesCNode']" targetFinderExpression="feature:has_nesC_wiring_code">
+          <style sizeComputationExpression="2" routingStyle="tree" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="IncludeDeclerationEdge (Module)" sourceMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@edgeMappings[name='ModuleEdge']" targetMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='IncludeDeclerationNode']" targetFinderExpression="feature:hasIncludeDecleration">
+          <style sizeComputationExpression="2" routingStyle="tree" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="IncludeDeclerationEdge (Configuration)" sourceMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@edgeMappings[name='ConfigurationEdge']" targetMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='IncludeDeclerationNode']" targetFinderExpression="feature:hasIncludeDecleration">
+          <style sizeComputationExpression="2" routingStyle="tree" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="ModuleImplementationHelperFunctionEdge" synchronizationLock="true" sourceMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ModuleImplementationNode']" targetMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='Helper_Function']" targetFinderExpression="feature:implements_helper_function">
+          <style sizeComputationExpression="2" routingStyle="manhattan" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="ModuleEdge" preconditionExpression="aql:self.oclAsType(tinyos_metamodel::Module).Name->size()>0" sourceMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ComponentNode']" targetMapping="//@ownedViewpoints[name='Mote']/@ownedRepresentations[name='Application%20diagram']/@defaultLayer/@nodeMappings[name='ModuleNode']" targetFinderExpression="feature:containsModule">
+          <style sizeComputationExpression="2" routingStyle="tree" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="tinyos_metamodel.design.Services"/>
+  </ownedViewpoints>
+</description:Group>

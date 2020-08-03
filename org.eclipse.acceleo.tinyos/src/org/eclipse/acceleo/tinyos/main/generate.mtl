@@ -1,0 +1,209 @@
+[comment encoding = UTF-8 /]
+[module generate('http://emf.tinyos_metamodel')/]
+[**
+ * The generation of "TinyOS" application
+ */]
+[template public generateElement(aMote : Mote)]
+[comment @main/]
+[file (aMote.hasApplication.Name+'C.nc', false, 'UTF-8')]
+	[generateApplication1(aMote.hasApplication)/]
+[/file]
+[file (aMote.hasApplication.Name+'AppC.nc', false, 'UTF-8')]
+	[generateApplication2(aMote.hasApplication)/]
+[/file]
+[/template]
+[template public generateApplication1(a : Application)]
+	[for (c : Component | a.hasComponent)]
+[generateModule(c)/]
+[/for]
+[/template]
+[template public generateApplication2(a : Application)]
+[for (c : Component | a.hasComponent)]
+[generateConfiguration(c)/]
+[/for]
+[/template]
+[template public generateModule(c : Component)]
+[let m : Module = c.containsModule]
+[for (gid : IncludeDecleration | c.hasIncludeDecleration)]
+[generateID(gid)/]
+[/for]
+[generateMS(m)/]
+[/let]
+[/template]
+[** 
+ * put the generateID inside "Module" and "Configuration" to generate their declerations 
+ */]
+[template public generateID(id : IncludeDecleration)]
+[comment Indicates whether the 'id.Name' is a different from the 'invalid', and it will return 'true' /]
+[if (id.Name<>'invalid')]
+#include "[id.Name/]"
+[/if]
+[/template]
+[template public generateConfiguration(c : Component)]
+[let cn : Configuration = c.containsConfiguration]
+[for (gid : IncludeDecleration | c.hasIncludeDecleration)]
+[generateID(gid)/]
+[/for]
+[generateCS(cn)/]
+[/let]
+[/template]
+[template public generateCS(cs : Configuration)]
+[if (cs.Name<>'invalid')]
+[comment it will return true if the 'cs.Name' equals to none '' /]
+configuration [cs.Name/][if (cs.Name='')][cs.has_configuration_signature.Name/][/if] {
+[generateConfigurationSignature(cs)/]
+}
+implementation {
+[generateConfigurationImplementationComponents(cs)/]
+[generateConfigurationImplementationWiring(cs)/]
+}
+[/if]
+[/template]
+[template public generateMS(ms : Module)]
+[if (ms.Name<>'invalid')]
+module [ms.Name/] @safe() {
+[generateModuleSignature(ms)/]
+}
+[/if]
+implementation {
+[if (ms.has_module_implementation.has_nesC_code->oclIsInvalid()._not())]
+[generateModuleImplementationnesc(ms)/]
+[/if]
+[if (ms.has_module_implementation.implementsTask->oclIsInvalid()._not())]
+[generateModuleImplementationTask(ms)/]
+[/if]
+[comment print events/]
+[for (event : Event | ms.has_module_implementation.implementsEvent)]
+[if (event.Name->oclIsInvalid()._not())]
+    event void [event.Name/] {
+[generateModuleImplementationEvent(ms)/]
+[if (event.Contents->oclIsInvalid()._not())]
+   [event.Contents/]
+[/if]
+ }
+[/if]
+[/for]
+[comment print helper function/]
+[for (helperfunction : Helper_Function | ms.has_module_implementation.implements_helper_function)]
+[if (helperfunction.Name->oclIsInvalid()._not())]
+    void [helperfunction.Name/] {
+[generateModuleImplementationHelperFunction(ms)/]
+[if (helperfunction.Name->oclIsInvalid()._not())]
+[helperfunction.Contents/]
+[/if]
+ }
+[/if]
+[/for]
+[if (ms.has_module_implementation.implementsCommand->oclIsInvalid()._not())]
+[generateModuleImplementationCommand(ms)/]
+[/if]
+}
+[/template]
+[** 
+ * generate "uses" and "provides" for module 
+ */]
+[template public generateModuleSignature(gms : Module)]
+[for (interface : Interface | gms.has_module_signature.usesInterface)]
+[if (interface.Name<>'invalid')]
+uses interface [interface.Name/];
+[/if]
+[/for]
+[for (interface : Interface | gms.has_module_signature.providesInterface)]
+[if (interface.Name<>'invalid')]
+provides interface [interface.Name/];
+[/if]
+[/for]
+[/template]
+[template public generateModuleImplementationnesc(gmin : Module)]
+[if (gmin.has_module_implementation.has_nesC_code.Content->oclIsInvalid()._not())]
+   /* nesc code */
+[for (nesc : nesC | gmin.has_module_implementation.has_nesC_code)]
+[if (nesc.Content.startsWith('#define')<>false)]
+	[nesc.Content/]
+[elseif (nesc.Content.startsWith('#define')<>true)]
+	[nesc.Content/]
+[/if]
+[/for]
+[if (gmin.has_module_implementation.implementsCommand.hasTask.Name->oclIsInvalid()._not())]
+[generateModuleImplementationCommandTask(gmin)/]
+[/if]
+[/if]
+[/template]
+[template public generateModuleImplementationEvent(gmie : Module)]
+   /* event content */
+[/template]
+[template public generateModuleImplementationHelperFunction(gmhf : Module)]
+   /* helper function content */
+[/template]
+[template public generateModuleImplementationCommand(gmic : Module)]
+[for (command : Command | gmic.has_module_implementation.implementsCommand)]
+[if (command.Name->oclIsInvalid()._not())]
+	 command void [command.Name/ ] {
+  /* command content */
+[if (command.Contents->oclIsInvalid()._not())]
+   [command.Contents/]
+[/if]
+[if (command.hasTask.Name->oclIsInvalid()._not())]
+[generateModuleImplementationCommandTask(gmic)/]
+[/if]
+ }
+[/if]
+[/for]
+[/template]
+[template public generateModuleImplementationCommandTask(gmit : Module)]
+[for (task : Task | gmit.has_module_implementation.implementsCommand.hasTask)]
+[if (task.Name->oclIsInvalid()._not())]
+	 task void [task.Name/ ] {
+  /* task content in command */
+ }
+[/if]
+[/for]
+[/template]
+[template public generateModuleImplementationTask(gmie : Module)]
+[for (task : Task | gmie.has_module_implementation.implementsTask)]
+[if (task.Name->oclIsInvalid()._not())]
+	 task void [task.Name/] {
+  /* task content */
+[if (task.Contents->oclIsInvalid()._not())]
+   [task.Contents/]
+[/if]
+ }
+[/if]
+[/for]
+[/template]
+[template public generateModuleImplementationEventTask(gmet : Module)]
+[let m : Module_Implementation = gmet.has_module_implementation]
+[if (m.implementsEvent.hasTask.Name->oclIsInvalid()._not())]
+	 task void [m.implementsEvent.hasTask.Name/ ] {
+  /* task content in event */
+ }
+[/if]
+[/let]
+[/template]
+[** 
+ * generate "uses" and "provides" for configuration 
+ */]
+[template public generateConfigurationSignature(gcs : Configuration)]
+[for (interface : Interface | gcs.has_configuration_signature.usesInterface)]
+[if (interface.Name<>'invalid')]
+uses interface [interface.Name/];
+[/if]
+[/for]
+[for (interface : Interface | gcs.has_configuration_signature.providesInterface)]
+[if (interface.Name<>'invalid')]
+provides interface [interface.Name/];
+[/if]
+[/for]
+[/template]
+[template public generateConfigurationImplementationComponents(gcie : Configuration)]
+[for (components : Components | gcie.has_configuration_implementation.definesComponents)]
+components [components.Name/];
+[/for]
+[/template]
+[template public generateConfigurationImplementationWiring(gciw : Configuration)]
+[for (nesc : nesC | gciw.has_configuration_implementation.hasWiring.has_nesC_wiring_code)]
+[if (nesc.Content<>'invalid')]
+[nesc.Content/];
+[/if]
+[/for]
+[/template]

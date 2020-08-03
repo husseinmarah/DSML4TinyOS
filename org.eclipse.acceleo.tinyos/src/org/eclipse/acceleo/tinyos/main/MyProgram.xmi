@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tinyos_metamodel:Mote xmi:version="2.0"
+    xmlns:tinyos_metamodel="http://emf.tinyos_metamodel"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://emf.tinyos_metamodel tinyos_metamodel.ecore">
+    <hasApplication Name="MyProgram">
+        <hasComponent Name="Module Component">
+            <containsModule Name="MyProgramC">
+                <has_module_signature Name="MyProgramC">
+                    <usesInterface Name="Leds"/>
+                    <usesInterface Name="Boot"/>
+                    <usesInterface Name="Timer&lt;TMilli> as AllLedBlink"/>
+                    <usesInterface Name="Timer&lt;TMilli> as RedLedBlink"/>
+                </has_module_signature>
+                <has_module_implementation>
+                    <has_nesC_code Content="uint8_t counter = 0;"/>
+                    <implementsEvent
+                        Contents="&#xd;&#xa;&#x9;&#x9;dbg(&quot;Boot,MyProgramC&quot;, &quot;Application booted.\n&quot;);&#xd;&#xa;&#x9;&#x9;call AllLedBlink.startPeriodic(250);&#xd;&#xa;&#x9;&#x9;call RedLedBlink.startPeriodic(500);&#xd;&#xa;&#x9;" Name="Boot.booted()"/>
+                    <implementsEvent
+                        Contents="&#xd;&#xa;&#x9;&#x9;printf(&quot;Hi, The application fired the timer of AllLedBlink event\n&quot;);&#xd;&#xa;&#x9;&#x9;&#xd;&#xa;&#x9;&#x9;// The Tree LEDs will toggle on.&#xd;&#xa;&#x9;&#x9;call Leds.led0Toggle();&#xd;&#xa;&#x9;&#x9;call Leds.led1Toggle();&#xd;&#xa;&#x9;&#x9;call Leds.led2Toggle();&#xd;&#xa;&#x9;&#x9;printf(&quot;Hi, Here the event called and turn on the tree LEDs\n&quot;);&#xd;&#xa;&#x9;" Name="AllLedBlink.fired()"/>
+                    <implementsEvent
+                        Contents="&#xd;&#xa;&#x9;&#x9;call Leds.led0Toggle();&#xd;&#xa;&#x9;&#x9;post ledCounter();&#xd;&#xa;&#x9;&#x9;printf(&quot;The Red Led Blink Event\n&quot;);&#xd;&#xa;&#x9;&#x9;dbg(&quot;MyProgramC&quot;, &quot;Red Led Blink\n&quot;);&#xd;&#xa;&#x9;" Name="RedLedBlink.fired()"/>
+                    <implementsTask
+                        Contents="ask void ledCounter() {&#xd;&#xa;&#x9;&#x9;uint8_t i;&#xd;&#xa;&#x9;&#x9;for (i = 0; i &lt; 10; i++) {&#xd;&#xa;&#x9;&#x9;&#x9;counter++;&#xd;&#xa;&#x9;&#x9;&#x9;if (counter > 5)&#xd;&#xa;&#x9;&#x9;&#x9;{&#xd;&#xa;&#x9;&#x9;&#x9;&#x9;// %u is used to print the uint8_t while %ul is used to print uint32_t&#xd;&#xa;&#x9;&#x9;&#x9;&#x9;printf(&quot;Here, The Led Counter is more > than 5: Counter= %u\n&quot;, i);&#xd;&#xa;&#x9;&#x9;&#x9;}&#xd;&#xa;&#x9;&#x9;&#x9;else{&#xd;&#xa;&#x9;&#x9;&#x9;&#x9;printf(&quot;Here, The Led Counter is less &lt; than 5: Counter= %u\n&quot;, i);&#xd;&#xa;&#x9;&#x9;&#x9;}&#xd;&#xa;&#x9;&#x9;}&#xd;&#xa;&#x9;" Name="ledCounter()"/>
+                </has_module_implementation>
+            </containsModule>
+        </hasComponent>
+        <hasComponent Name="Configuration Component">
+            <containsConfiguration Name="">
+                <has_configuration_signature Name=""/>
+                <has_configuration_implementation>
+                    <hasWiring Description=""/>
+                </has_configuration_implementation>
+            </containsConfiguration>
+            <hasIncludeDecleration Name="Timer.h"/>
+            <hasIncludeDecleration Name="printf.h"/>
+        </hasComponent>
+    </hasApplication>
+</tinyos_metamodel:Mote>

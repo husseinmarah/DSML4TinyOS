@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated tinyos_metamodel -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="tinyos_metamodel.presentation.Tinyos_metamodelModelWizardID"
+            name="%_UI_Tinyos_metamodelModelWizard_label"
+            class="tinyos_metamodel.presentation.Tinyos_metamodelModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Tinyos_metamodelModelFile.gif">
+         <description>%_UI_Tinyos_metamodelModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated tinyos_metamodel -->
+      <editor
+            id="tinyos_metamodel.presentation.Tinyos_metamodelEditorID"
+            name="%_UI_Tinyos_metamodelEditor_label"
+            icon="icons/full/obj16/Tinyos_metamodelModelFile.gif"
+            extensions="tinyos_metamodel"
+            class="tinyos_metamodel.presentation.Tinyos_metamodelEditor"
+            contributorClass="tinyos_metamodel.presentation.Tinyos_metamodelActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

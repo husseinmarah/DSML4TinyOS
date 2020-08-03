@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/tinyos_metamodel/src-gen" creationIcons="false"
+    editDirectory="/tinyos_metamodel.edit/src-gen" editorDirectory="/tinyos_metamodel.editor/src-gen"
+    modelPluginID="tinyos_metamodel" modelName="Tinyos_metamodel" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0"
+    copyrightFields="false" colorProviders="true" classNamePattern="" operationReflection="true"
+    importOrganizing="true">
+  <foreignModel>tinyos_metamodel.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Tinyos_metamodel" disposableProviderFactory="true" loadInitialization="true"
+      ecorePackage="tinyos_metamodel.ecore#/">
+    <genClasses ecoreClass="tinyos_metamodel.ecore#//Application">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tinyos_metamodel.ecore#//Application/Name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tinyos_metamodel.ecore#//Application/hasComponent"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tinyos_metamodel.ecore#//Application/Information"/>
+    </genClasses>
+    <genClasses ecoreClass="tinyos_metamodel.ecore#//Component">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tinyos_metamodel.ecore#//Component/Name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tinyos_metamodel.ecore#//Component/containsModule"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tinyos_metamodel.ecore#//Component/containsConfiguration"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tinyos_metamodel.ecore#//Component/hasIncludeDecleration"/>
+    </genClasses>
+    <genClasses ecoreClass="tinyos_metamodel.ecore#//Module">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tinyos_metamodel.ecore#//Module/has_module_signature"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tinyos_metamodel.ecore#//Module/has_module_implementation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tinyos_metamodel.ecore#//Module/Name"/>
+    </genClasses>
+    <genClasses ecoreClass="tinyos_metamodel.ecore#//Configuration">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tinyos_metamodel.ecore#//Configuration/has_configuration_signature"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tinyos_metamodel.ecore#//Configuration/has_configuration_implementation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tinyos_metamodel.ecore#//Configuration/Name"/>
+    </genClasses>
+    <genClasses ecoreClass="tinyos_metamodel.ecore#//Module_Signature">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tinyos_metamodel.ecore#//Module_Signature/usesInterface"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tinyos_metamodel.ecore#//Module_Signature/providesInterface"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tinyos_metamodel.ecore#//Module_Signature/Name"/>
+    </genClasses>
+    <genClasses ecoreClass="tinyos_metamodel.ecore#//Module_Implementation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tinyos_metamodel.ecore#//Module_Implementation/has_nesC_code"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tinyos_metamodel.ecore#//Module_Implementation/implementsEvent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tinyos_metamodel.ecore#//Module_Implementation/implementsCommand"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tinyos_metamodel.ecore#//Module_Implementation/implementsTask"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tinyos_metamodel.ecore#//Module_Implementation/implements_helper_function"/>
+    </genClasses>
+    <genClasses ecoreClass="tinyos_metamodel.ecore#//Configuration_Implementation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tinyos_metamodel.ecore#//Configuration_Implementation/hasWiring"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tinyos_metamodel.ecore#//Configuration_Implementation/definesComponents"/>
+    </genClasses>
+    <genClasses ecoreClass="tinyos_metamodel.ecore#//Configuration_Signature">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tinyos_metamodel.ecore#//Configuration_Signature/usesInterface"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tinyos_metamodel.ecore#//Configuration_Signature/providesInterface"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tinyos_metamodel.ecore#//Configuration_Signature/Name"/>
+    </genClasses>
+    <genClasses ecoreClass="tinyos_metamodel.ecore#//Interface">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tinyos_metamodel.ecore#//Interface/hasFunction"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tinyos_metamodel.ecore#//Interface/Name"/>
+    </genClasses>
+    <genClasses ecoreClass="tinyos_metamodel.ecore#//Function">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tinyos_metamodel.ecore#//Function/hasCommand"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tinyos_metamodel.ecore#//Function/hasEvent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tinyos_metamodel.ecore#//Function/hasTask"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tinyos_metamodel.ecore#//Function/has_helper_function"/>
+    </genClasses>
+    <genClasses ecoreClass="tinyos_metamodel.ecore#//Event">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tinyos_metamodel.ecore#//Event/Name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tinyos_metamodel.ecore#//Event/hasTask"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tinyos_metamodel.ecore#//Event/Contents"/>
+    </genClasses>
+    <genClasses ecoreClass="tinyos_metamodel.ecore#//Command">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tinyos_metamodel.ecore#//Command/Name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tinyos_metamodel.ecore#//Command/hasTask"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tinyos_metamodel.ecore#//Command/Contents"/>
+    </genClasses>
+    <genClasses ecoreClass="tinyos_metamodel.ecore#//nesC">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tinyos_metamodel.ecore#//nesC/Content"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tinyos_metamodel.ecore#//nesC/Description"/>
+    </genClasses>
+    <genClasses ecoreClass="tinyos_metamodel.ecore#//Wiring">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tinyos_metamodel.ecore#//Wiring/wiresComponent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tinyos_metamodel.ecore#//Wiring/has_nesC_wiring_code"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tinyos_metamodel.ecore#//Wiring/Description"/>
+    </genClasses>
+    <genClasses ecoreClass="tinyos_metamodel.ecore#//Components">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tinyos_metamodel.ecore#//Components/Name"/>
+    </genClasses>
+    <genClasses ecoreClass="tinyos_metamodel.ecore#//Task">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tinyos_metamodel.ecore#//Task/Name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tinyos_metamodel.ecore#//Task/Contents"/>
+    </genClasses>
+    <genClasses ecoreClass="tinyos_metamodel.ecore#//Mote">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tinyos_metamodel.ecore#//Mote/ID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tinyos_metamodel.ecore#//Mote/Port"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tinyos_metamodel.ecore#//Mote/hasApplication"/>
+    </genClasses>
+    <genClasses ecoreClass="tinyos_metamodel.ecore#//IncludeDecleration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tinyos_metamodel.ecore#//IncludeDecleration/Name"/>
+    </genClasses>
+    <genClasses ecoreClass="tinyos_metamodel.ecore#//Helper_Function">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tinyos_metamodel.ecore#//Helper_Function/Name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tinyos_metamodel.ecore#//Helper_Function/Contents"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

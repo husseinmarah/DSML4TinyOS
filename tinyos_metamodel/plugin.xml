@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated tinyos_metamodel -->
+      <package
+            uri="http://emf.tinyos_metamodel"
+            class="tinyos_metamodel.Tinyos_metamodelPackage"
+            genModel="model/tinyos_metamodel.genmodel"/>
+   </extension>
+
+
+<extension  point="org.eclipse.emf.ecp.view.model.provider.xmi.file">
+<file filePath="model/Mote.view"/>
+</extension>
+</plugin>

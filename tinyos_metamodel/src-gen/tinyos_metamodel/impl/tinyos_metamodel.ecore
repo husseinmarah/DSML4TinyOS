@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="tinyos_metamodel" nsURI="http://emf.tinyos_metamodel" nsPrefix="tinyos_metamodel">
+  <eClassifiers xsi:type="ecore:EClass" name="Application">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasComponent" lowerBound="1"
+        upperBound="2" eType="#//Component" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Information" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Component">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="containsModule" eType="#//Module"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="containsConfiguration"
+        eType="#//Configuration" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasIncludeDecleration"
+        upperBound="-1" eType="#//IncludeDecleration" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Module">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="has_module_signature" lowerBound="1"
+        eType="#//Module_Signature" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="has_module_implementation"
+        lowerBound="1" eType="#//Module_Implementation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Configuration">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="has_configuration_signature"
+        lowerBound="1" eType="#//Configuration_Signature" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="has_configuration_implementation"
+        lowerBound="1" eType="#//Configuration_Implementation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Module_Signature">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="usesInterface" upperBound="-1"
+        eType="#//Interface" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="providesInterface" upperBound="-1"
+        eType="#//Interface" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Module_Implementation">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="has_nesC_code" upperBound="-1"
+        eType="#//nesC" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="implementsEvent" upperBound="-1"
+        eType="#//Event" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="implementsCommand" upperBound="-1"
+        eType="#//Command" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="implementsTask" upperBound="-1"
+        eType="#//Task" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="implements_helper_function"
+        upperBound="-1" eType="#//Helper_Function" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Configuration_Implementation">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasWiring" lowerBound="1"
+        upperBound="-1" eType="#//Wiring" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="definesComponents" upperBound="-1"
+        eType="#//Components" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Configuration_Signature">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="usesInterface" upperBound="-1"
+        eType="#//Interface" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="providesInterface" upperBound="-1"
+        eType="#//Interface" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Interface">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasFunction" upperBound="-1"
+        eType="#//Function" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Function" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasCommand" upperBound="-1"
+        eType="#//Command" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasEvent" upperBound="-1"
+        eType="#//Event" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasTask" upperBound="-1"
+        eType="#//Task" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="has_helper_function" upperBound="-1"
+        eType="#//Helper_Function" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Event">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasTask" upperBound="-1"
+        eType="#//Task" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Contents" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Command">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasTask" upperBound="-1"
+        eType="#//Task" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Contents" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="nesC">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Content" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Wiring">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="wiresComponent" upperBound="-1"
+        eType="#//Component"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="has_nesC_wiring_code" upperBound="-1"
+        eType="#//nesC" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Components">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Task">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Contents" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Mote">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Port" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasApplication" eType="#//Application"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IncludeDecleration">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Helper_Function">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Contents" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>
